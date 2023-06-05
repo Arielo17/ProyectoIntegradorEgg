@@ -1,0 +1,53 @@
+<footer
+
+    >
+    <div class="col-md-4">
+        <p class="text-muted textoFooter">&copy; MiTurno</p>
+    </div>
+    <div class="col-md-4">
+                  <!--SI  HAY LOGUEADO-->
+                <a
+                    href="/inicio"
+                    class="logo"
+                    th:if="${session.pacienteSession != null} OR ${session.profesionalSession != null} "
+                    >
+                    <img
+                        src="../../logo2_App.png"
+                        alt="logo"
+                        class="logoFooter"
+                        />
+                </a>
+
+                <!--SI NO  HAY LOGUEADO-->
+                <a
+                    href="/"
+                    class="logo"
+                    th:if="${session.pacienteSession == null} AND ${session.profesionalSession == null}"
+                    >
+                    <img
+                        src="../../logo2_App.png"
+                        alt="logo"
+                        class="logoFooter"
+                        />
+                </a>
+    </div>       
+
+
+    <ul class="nav col-md-4 justify-content-end">
+        <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com"
+               ><i class="fa-brands fa-instagram iconoContacto"></i></a>
+        </li>
+
+        <li class="ms-3">
+            <a class="text-muted" href="https://www.twitter.com"
+               ><i class="fa-brands fa-twitter iconoContacto"></i></a>
+        </li>
+
+        <li class="ms-3">
+            <a class="text-muted" href="https://www.linkedin.com"
+               ><i class="fa-brands fa-linkedin-in iconoContacto"></i
+                ></a>
+        </li>
+    </ul>
+</footer>

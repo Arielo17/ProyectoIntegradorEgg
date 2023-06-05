@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+          <head th:replace= "/fragments/head :: head" </head>
+
+    <body>
+
+        <!--HEADER-->
+
+        <div class="container-fluid cabecera">
+            <header th:replace="/fragments/header :: header"</header>
+        </div>
+
+        <!--MAIN-->
+
+        <main>
+            <div class="container-fluid index" id="index">
+              <div id="presentacion" class="row presentacion">
+                <!-- PRESENTACIÓN -->
+                <div class="col-12 contenedorPresentacion">
+                  <div class="row presentacionRow">
+                    <div class="col-xs-12 col-md-12 col-lg-7 divAdornos">
+<!--                      <h2 class="adorno1">ELEGÍS TU MEDICO/A</h2>
+                      <h2 class="adorno2">ELEGÍS EL DÍA Y LA HORA</h2>
+                      <h2 class="adorno3">Y LISTO!</h2>-->
+                    </div>
+      
+                    <div class="col-xs-12 col-md-12 col-lg-6 col-xl-5 divNosotros">
+                      <!-- <h1 id="nosotros" class="nosotros">NUESTRA EMPRESA</h1> -->
+                        <h2 class="adorno1"->ELEGÍ TU MÉDICO/A</h2>
+                      <h2 class="adorno2">ELEGÍS EL DÍA Y LA HORA</h2>
+                      <h2 class="adorno3">Y LISTO!</h2>
+                      <p class="textoIndex" id="textoIndex">
+                        Descubrí todo lo que MiTurno te puede ofrecer
+                      </p>
+                      <a href="/login"> <button type="button" class="btn btn-primary botonesIndex btnIndex">Hacé click acá</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+
+
+
+
+        <!--FOOTER-->
+        <div class="container-fluid pie">
+            <<footer  th:replace="/fragments/footer :: footer"</footer>
+                         
+        </div>
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"
+        ></script>
+
+    </body>
+</html>
+
